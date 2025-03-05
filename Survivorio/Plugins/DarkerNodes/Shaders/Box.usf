@@ -1,0 +1,37 @@
+/* Copyright (C) 2021 Hugo ATTAL - All Rights Reserved
+* This plugin is downloadable from the Unreal Engine Marketplace
+*/
+
+#include "lib/Shapes.usf"
+
+struct DarkerUIBox
+{
+	static float4 ComputeBox(float2 PixelSize, float2 UVs, float4 BackgroundColor, float4 BorderColor, float Radius, float4 Padding)
+	{
+		float2 Location = UVs * PixelSize;
+		
+		PixelSize.x -= Padding.x + Padding.z;
+		PixelSize.y -= Padding.y + Padding.w;
+		Location.x -= Padding.x;
+		Location.y -= Padding.y;
+		
+		Radius = min(Radius, min(PixelSize.x, PixelSize.y) / 2 - 2);
+
+		const float ExternalRectangle = DarkerUIShapes::IsInRoundedRectangle(Location, float2(1, 1), PixelSize - float2(1, 1), Radius + 1);
+		const float InternalRectangle = DarkerUIShapes::IsInRoundedRectangle(Location, float2(2, 2), PixelSize - float2(2, 2), Radius);
+
+		const float Alpha = lerp(
+			ExternalRectangle * BorderColor.a, BackgroundColor.a,
+			InternalRectangle);
+		const float3 Color = lerp(
+			BorderColor.rgb, BackgroundColor.rgb,
+			InternalRectangle);
+		
+		return float4(Color, Alpha);
+	}
+};
+
+/*
+#include "/DarkerNodes/Box.usf"
+return DarkerUIBox::ComputeBox(PixelSize, UVs, BackgroundColor, BorderColor, Radius, Padding);
+*/

@@ -1,0 +1,30 @@
+/* Copyright (C) 2021 Hugo ATTAL - All Rights Reserved
+* This plugin is downloadable from the Unreal Engine Marketplace
+*/
+
+struct DarkerUICenterUVs
+{
+	static float2 GetCenterUVs(float2 PixelSize, float2 Size, float2 UVs)
+	{
+		if (PixelSize.x > Size.x)
+		{
+			UVs.x *= PixelSize.x / Size.x;
+			UVs.x -= (PixelSize.x - Size.x) / (2.0f * Size.x);
+		}
+
+		if (PixelSize.y > Size.y)
+		{
+			UVs.y *= PixelSize.y / Size.y;
+			UVs.y -= (PixelSize.y - Size.y) / (2.0f * Size.y);
+		}
+
+		UVs = clamp(UVs, 0, 1);
+
+		return UVs;
+	}
+};
+
+/*
+#include "/DarkerNodes/CenterUVs.usf"
+return DarkerUICenterUVs::GetCenterUVs(PixelSize, Size, UVs);
+*/

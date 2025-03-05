@@ -1,0 +1,35 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\lib\\brushdatabase.cpp",
+        "ProvidedModule": "",
+        "PCH": "x:\\unreal projects1\\plugin 5.5\\intermediate\\build\\win64\\x64\\plugineditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\darkernodes\\definitions.darkernodes.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\lib\\brushdatabase.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\slate\\public\\slatematerialbrush.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\intermediate\\build\\win64\\unrealeditor\\inc\\darkernodes\\uht\\brushdatabase.generated.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\editor\\unrealed\\public\\filehelpers.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\editor\\unrealed\\public\\packagetools.h",
+            "x:\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\packagetools.generated.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "x:\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\filehelpers.generated.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\public\\imageutils.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\projects\\public\\versescope.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

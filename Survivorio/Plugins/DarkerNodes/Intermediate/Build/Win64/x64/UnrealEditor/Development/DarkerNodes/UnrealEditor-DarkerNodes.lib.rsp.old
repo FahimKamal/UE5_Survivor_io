@@ -1,0 +1,21 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-DarkerNodes.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"X:\Unreal Projects1\Plugin 5.5\Intermediate\Build\Win64\x64\PluginEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\Module.DarkerNodes.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\Colorizer.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\DarkerNodes.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\ColorizerFonts.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\ColorizerGraph.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\ColorizerParameters.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\ColorizerText.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\ColorizerUtils.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\BrushDatabase.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\DNUpdatePopup.cpp.obj"
+"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\Default.rc2.res"
+/OUT:"X:\Unreal Projects1\Plugin 5.5\Plugins\DarkerNodes\Intermediate\Build\Win64\x64\UnrealEditor\Development\DarkerNodes\UnrealEditor-DarkerNodes.lib"

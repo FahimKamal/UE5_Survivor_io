@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\colorizer\\colorizertext.cpp",
+        "ProvidedModule": "",
+        "PCH": "x:\\unreal projects1\\plugin 5.5\\intermediate\\build\\win64\\x64\\plugineditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\darkernodes\\definitions.darkernodes.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\colorizer.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\public\\darkernodessettings.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\intermediate\\build\\win64\\unrealeditor\\inc\\darkernodes\\uht\\darkernodessettings.generated.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\lib\\brushdatabase.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\slate\\public\\slatematerialbrush.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\intermediate\\build\\win64\\unrealeditor\\inc\\darkernodes\\uht\\brushdatabase.generated.h",
+            "x:\\unreal projects1\\plugin 5.5\\plugins\\darkernodes\\source\\darkernodes\\private\\lib\\rob.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\slatecore\\public\\styling\\starshipcorestyle.h",
+            "x:\\epic games\\ue_5.5\\engine\\source\\runtime\\slatecore\\public\\styling\\toolbarstyle.h",
+            "x:\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\slatecore\\uht\\toolbarstyle.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,64 @@
+/* Copyright (C) 2021 Hugo ATTAL - All Rights Reserved
+* This plugin is downloadable from the Unreal Engine Marketplace
+*/
+
+#pragma once
+
+#define PI 3.14159265359
+#define TWO_PI 6.28318530718
+
+struct DarkerUIShapes
+{
+	static float IsInRectangle(float2 Location, float2 Start, float2 End)
+	{
+		return
+			clamp(Location.x - Start.x + 0.5, 0.0f, 1.0f) *
+			clamp(End.x - Location.x + 0.5, 0.0f, 1.0f) *
+			clamp(Location.y - Start.y + 0.5, 0.0f, 1.0f) *
+			clamp(End.y - Location.y + 0.5, 0.0f, 1.0f);
+	}
+
+	static float IsInOutlineRectangle(float2 Location, float2 Start, float2 End, float Outline)
+	{
+		const float2 OutlineOffset = float2(Outline, Outline);
+		return IsInRectangle(Location, Start, End) && ! IsInRectangle(Location, Start + OutlineOffset, End - OutlineOffset);
+	}
+
+	static float IsInCircle(float2 Location, float2 Center, float Radius)
+	{
+		return clamp(Radius - length(Location - Center) + 0.5f, 0.0f, 1.0f);
+	}
+
+	static float IsInOutlineCircle(float2 Location, float2 Center, float Radius, float Outline)
+	{
+		return IsInCircle(Location, Center, Radius) && !IsInCircle(Location, Center, Radius - Outline);
+	}
+
+	static float IsInRoundedRectangle(float2 Location, float2 Start, float2 End, float Radius)
+	{
+		float Value = 0;
+
+		Value = max(Value, IsInRectangle(Location, Start + float2(0, Radius), End - float2(0, Radius)));
+		Value = max(Value, IsInRectangle(Location, Start + float2(Radius, 0), End - float2(Radius, 0)));
+
+		Value = max(Value, IsInCircle(Location, Start + float2(Radius, Radius), Radius));
+		Value = max(Value, IsInCircle(Location, End + float2(-Radius, -Radius), Radius));
+		Value = max(Value, IsInCircle(Location, float2(Start.x, End.y) + float2(Radius, -Radius), Radius));
+		Value = max(Value, IsInCircle(Location, float2(End.x, Start.y) + float2(-Radius, Radius), Radius));
+
+		return Value;
+	}
+
+	static float IsInRoundedHeader(float2 Location, float2 Start, float2 End, float Radius)
+	{
+		float Value = 0;
+
+		Value = max(Value, IsInRectangle(Location, Start + float2(0, Radius), End));
+		Value = max(Value, IsInRectangle(Location, Start + float2(Radius, 0), End - float2(Radius, 0)));
+
+		Value = max(Value, IsInCircle(Location, Start + float2(Radius, Radius), Radius));
+		Value = max(Value, IsInCircle(Location, float2(End.x, Start.y) + float2(-Radius, Radius), Radius));
+
+		return Value;
+	}
+};

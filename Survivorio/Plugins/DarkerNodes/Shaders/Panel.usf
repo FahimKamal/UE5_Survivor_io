@@ -1,0 +1,22 @@
+/* Copyright (C) 2021 Hugo ATTAL - All Rights Reserved
+* This plugin is downloadable from the Unreal Engine Marketplace
+*/
+
+#include "lib/Shapes.usf"
+
+struct DarkerUIPanel
+{
+	static float4 ComputePane(float2 PixelSize, float2 UVs, float3 BackgroundColor, float3 BorderColor)
+	{
+		const float2 Location = UVs * PixelSize;
+		const float3 Color = lerp(
+			BorderColor, BackgroundColor,
+			DarkerUIShapes::IsInRectangle(Location, float2(1, 1), PixelSize - float2(1, 1)));
+		return float4(Color, 1.0f);
+	}
+};
+
+/*
+#include "/DarkerNodes/Panel.usf"
+return DarkerUIPanel::ComputePane(PixelSize, UVs, BackgroundColor, BorderColor);
+*/

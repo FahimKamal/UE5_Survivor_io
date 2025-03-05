@@ -1,0 +1,24 @@
+/* Copyright (C) 2021 Hugo ATTAL - All Rights Reserved
+* This plugin is downloadable from the Unreal Engine Marketplace
+*/
+
+#include "lib/Shapes.usf"
+
+struct DarkerUIButton
+{
+	static float4 ComputeButton(float2 PixelSize, float2 UVs, float3 BackgroundColor, float3 BorderColor, float Radius)
+	{
+		Radius = min(Radius, min(PixelSize.x, PixelSize.y) / 2 - 1);
+		const float2 Location = UVs * PixelSize;
+		const float Alpha = DarkerUIShapes::IsInRoundedRectangle(Location, float2(0, 0), PixelSize, Radius + 1);
+		const float3 Color = lerp(
+			BorderColor, BackgroundColor,
+			DarkerUIShapes::IsInRoundedRectangle(Location, float2(1, 1), PixelSize - float2(1, 1), Radius));
+		return float4(Color, Alpha);
+	}
+};
+
+/*
+#include "/DarkerNodes/Button.usf"
+return DarkerUIButton::ComputeButton(PixelSize, UVs, BackgroundColor, BorderColor, Radius);
+*/
