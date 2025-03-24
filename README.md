@@ -68,11 +68,13 @@ Each level-up increases the **XP requirement for the next level**, making surviv
 
 1. **Clone the repository:**  
    ```sh
-   git clone https://github.com/your-username/spellcaster.git 
+   git clone https://github.com/FahimKamal/UE5_Survivor_io.git
    ```
 2. Open the project in Unreal Engine.
 
 3. Click Play and start your magical survival journey!
+
+--- 
 
 ## 🎯 Features
 - ✔️ Top-down spellcasting gameplay
@@ -82,11 +84,17 @@ Each level-up increases the **XP requirement for the next level**, making surviv
 - ✔️ Health pickups for strategic survival
 - ✔️ Built with Unreal Engine Blueprints
 
+---
+
 ## 🎮 Screenshots
 (Include in-game screenshots to showcase the gameplay!)
 
+---
+
 ## ⭐ Contribute
 Feel free to fork this repository, make improvements, and submit pull requests!
+
+---
 
 ## 📜 License
 This project is open-source under the MIT License.
