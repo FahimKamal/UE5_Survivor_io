@@ -74,6 +74,8 @@ Each level-up increases the **XP requirement for the next level**, making surviv
 
 3. Click Play and start your magical survival journey!
 
+4. Or Go to the release section and download the latest build of the game. 
+
 --- 
 
 ## 🎯 Features
