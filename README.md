@@ -94,7 +94,17 @@ Each level-up increases the **XP requirement for the next level**, making surviv
 ---
 
 ## 🎮 Screenshots
-(Include in-game screenshots to showcase the gameplay!)
+
+![Screenshot 2025-03-26 105553](https://github.com/user-attachments/assets/b4b78845-131d-4ddf-8559-975e8454bfdd)
+
+![Screenshot 2025-03-26 105605](https://github.com/user-attachments/assets/6db0a482-4fa1-4feb-b92c-baf58b2d4946)
+
+![Screenshot 2025-03-26 105659](https://github.com/user-attachments/assets/e06b2e09-2ff7-4e9c-b61a-bc25908fc18f)
+
+![Screenshot 2025-03-26 105806](https://github.com/user-attachments/assets/684b2a3b-c4f4-4456-8878-dad20369c666)
+
+![Screenshot 2025-03-26 105740](https://github.com/user-attachments/assets/25a05641-4d4b-4cdd-bd77-441f8689a729)
+
 
 ---
 
@@ -106,4 +116,4 @@ Feel free to fork this repository, make improvements, and submit pull requests!
 ## 📜 License
 This project is open-source under the MIT License.
 
-## 🚀 Survive. Cast Spells. Become a Legendary Sorcerer!
+🚀 Survive, Cast Spells. Become a Legendary Sorcerer!
