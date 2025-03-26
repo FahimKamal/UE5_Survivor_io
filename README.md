@@ -79,7 +79,7 @@ Each level-up increases the **XP requirement for the next level**, making surviv
 
 3. Click Play and start your magical survival journey!
 
-4. Or Go to the release section and download the latest build of the game. 
+4. Or go to the release section and download the game's latest build. 
 
 --- 
 
@@ -105,3 +105,5 @@ Feel free to fork this repository, make improvements, and submit pull requests!
 
 ## 📜 License
 This project is open-source under the MIT License.
+
+## 🚀 Survive. Cast Spells. Become a Legendary Sorcerer!
